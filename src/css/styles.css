@@ -20,3 +20,192 @@
 @import url('./modal.css');
 @import url('./cart.css');
 @import url('./not-found.css');
+
+
+.categories-section {
+  padding: 20px;
+}
+
+.categories-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.categories {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+
+.category-item {
+  padding: 8px 16px;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.category-item:hover,
+.category-item.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.not-found {
+  display: none;
+}
+
+.not-found--visible {
+  display: block;
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.load-more {
+  display: none;
+}
+
+.load-more.is-visible {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.load-more.is-visible:hover {
+  background-color: #357ABD;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 6px;
+  font-size: 20px;
+  background-color: #357ABD;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top.show {
+  display: block;
+}
+
+.load-more.is-visible {
+  padding: 10px 20px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 5px;
+}
+
+.modal-product {
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  font-family: sans-serif;
+}
+
+.modal-product__img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+.modal-product__content {
+  flex: 1;
+}
+
+.modal-product__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modal-product__tags {
+  display: flex;
+  gap: 10px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  color: #555;
+}
+
+.modal-product__description {
+  margin-bottom: 10px;
+}
+
+.modal-product__shipping-information,
+.modal-product__return-policy,
+.modal-product__price {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.modal-product__buy-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff6b0a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.modal-product__buy-btn:hover {
+  background-color: #e35a00;
+}
+
+.search-box {
+  display: flex;
+  max-width: 400px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0 20px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}

@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load
-      src="./partials/header.html"
-      icon-path="img/sprite.svg#logo"
-      highlight-home="nav__link--active"
-    />
-
+    <header>
+      <form class="search-box" id="search-form">
+        <input type="text" id="query" name="query" class="search-input" placeholder="Введіть товар..." required />
+        <button type="submit" class="search-button">🔍</button>
+      </form>
+    </header>
     <main>
       <section class="section">
         <div class="container">
@@ -44,8 +44,10 @@
           </div>
         </div>
       </section>
+      <button type="button" class="load-more">Load more</button>
+      <button class="scroll-to-top" aria-label="Scroll to top">⬆up</button>
     </main>
-    <load src="./partials/modal.html" />
+   
     <script type="module" src="./home.js"></script>
   </body>
 </html>
